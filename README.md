@@ -13,7 +13,7 @@ Rangel Alvarez, Lundberg, Lu, Lebeis, Jin, McDonald, Feltcher, Glavina del Rio,
 Grant, Doty, Ley, Pelletier, Tringe, Woyke & Dangl. "Genetic determinants
 of bacterial adaptation to plants". 2017. *in preparation*.
 
-## Requiremnts
+## Requirements
 
 The R code requires several R packages that are availabe online via CRAN,
 as well as the [AMOR](https://github.com/surh/AMOR) package.
