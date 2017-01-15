@@ -9,18 +9,18 @@ root-associated and soil-associated genes.
 If you use the code provided here, please cite the following paper:
 
 Levy, Clingenpeel, Salas Gonzales, Herrera Paredes, Stillman, Monteiro,
-Rangel Alvarez, Lundberg, Lu, LEbeis, Jin, McDonald, Feltcher, Glavina del Rio,
+Rangel Alvarez, Lundberg, Lu, Lebeis, Jin, McDonald, Feltcher, Glavina del Rio,
 Grant, Doty, Ley, Pelletier, Tringe, Woyke & Dangl. "Genetic determinants
 of bacterial adaptation to plants". 2017. *in preparation*.
 
 ## Requiremnts
 
-The R code requires several R packages that are availabe online,
+The R code requires several R packages that are availabe online via CRAN,
 as well as the [AMOR](https://github.com/surh/AMOR) package.
 
 Perl code was run with perl v5.8.8, but it should work on any recent
-Perl5 version. The pipelines implemented in perl require a cluster
-using LSF to work.
+Perl5 version. The pipelines implemented in perl require a computer
+cluster using LSF to work.
 
 ## Copyright
     (C) Copyright 2017 Sur Herrera Paredes
