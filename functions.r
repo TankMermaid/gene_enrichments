@@ -283,10 +283,10 @@ get_group <- function(group, tree, genes, Map, classes = c("NPA","PA")){
   # Get genes (features) per genome
   if(all(subtree$tip.label == intersect(subtree$tip.label,row.names(genes)))){
     # Remove constant and non informative genes
-    genes.sub <- genes[ subtree$tip.label, ]
-    genes.sub <- genes.sub[ , !apply(genes.sub,2,function(x) all(x[1] == x)) ]
+    genes.sub <- genes[ subtree$tip.label, ,drop = FALSE ]
+    genes.sub <- genes.sub[ , !apply(genes.sub,2,function(x) all(x[1] == x)), drop = FALSE ]
     #genes.sub <- genes.sub[ , apply(genes.sub,2,function(x) min(table(x)) > 1) ]
-    genes.sub <- genes.sub[ ,colSums(genes.sub) >= 5 ]
+    genes.sub <- genes.sub[ ,colSums(genes.sub) >= 5, drop = FALSE ]
     #dim(genes.sub)
     #gc()
   }else{
