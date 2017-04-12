@@ -17,6 +17,7 @@
 
 # Read parameters
 # First always load extra functions
+library(ape)
 fundir <- opts[5]
 if(is.na(fundir)){
   fundir <- "~/rhizogenomics/src/trunk/compare_genomes/gene_enrichments/"
