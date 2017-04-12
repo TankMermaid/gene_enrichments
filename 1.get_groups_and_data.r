@@ -71,7 +71,7 @@ shared <- intersect(shared, as.character(Map$taxon_oid))
 length(shared)
 head(shared)
 Map <- subset(Map,taxon_oid %in% shared)
-genes <- genes[shared,]
+genes <- genes[shared, , drop = FALSE]
 to_remove <- tree$tip.label[ !(tree$tip.label %in% shared) ] 
 tree <- drop.tip(phy = tree,tip = to_remove)
 
